@@ -1,8 +1,26 @@
-# F1 Qualifying Predictor 🏎️
+# 🏎️ F1QualiPredictor
 
-A Python-based machine learning application that predicts Formula 1 qualifying results using historical data from the FastF1 API, machine learning models, and performance heuristics.
+**Accurately predict Formula 1 qualifying results using machine learning and performance-based heuristics.**  
+Built with [FastF1](https://theoehrly.github.io/Fast-F1/), `scikit-learn`, and `Streamlit`.
 
-![F1 Qualifying Predictor](https://i.imgur.com/XYZ123.png)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-ff4b4b?logo=streamlit)
+
+---
+![F1 Qualifying Predictor](image.png)
+
+This is how F1QualiPredictor looks in action
+
+---
+
+## 📌 Overview
+
+**F1QualiPredictor 2025** is a Python-based application that predicts Q3 qualifying times for upcoming Formula 1 races. It combines historical performance data with machine learning and driver/team heuristics to simulate realistic qualifying outcomes.
+
+Built for fans, analysts, and developers who love the intersection of motorsport and machine intelligence.
+
+---
 
 ## 🏁 Features
 
@@ -12,23 +30,7 @@ A Python-based machine learning application that predicts Formula 1 qualifying r
 - **Interactive Dashboard**: Visualizes predictions and historical data with F1-inspired design
 - **Hybrid Prediction**: Combines ML and heuristic approaches for accurate results
 
-## 🚀 Quick Start
-
-1. Install the required dependencies:
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-
-2. Run the Streamlit application:
-\`\`\`bash
-streamlit run main.py
-\`\`\`
-
-3. In the web interface:
-   - Select a circuit from the sidebar
-   - Choose your model settings
-   - Set weather conditions
-   - Click "GENERATE PREDICTIONS"
+---
 
 ## 📊 Interface Features
 
@@ -38,25 +40,8 @@ The application provides a vibrant, F1-themed interface with:
 - **Data Analysis Tab**: Explore historical qualifying data and model performance
 - **About Tab**: Learn about the application and how it works
 
-## 🔧 Project Structure
 
-\`\`\`
-F1QualiPredictor/
-├── data/
-│   └── cache/               # FastF1 cache
-├── src/
-│   ├── data_fetching.py     # FastF1 API interactions
-│   ├── preprocess.py        # Data cleaning and feature engineering
-│   ├── model.py             # ML model training and evaluation
-│   └── predictors.py        # Prediction logic with performance factors
-├── app/
-│   └── ui.py                # Streamlit interface with F1 styling
-├── models/                  # Saved models
-├── main.py                  # Entry point
-├── requirements.txt         # Dependencies
-└── README.md                # Documentation
-\`\`\`
-
+---
 ## 🏎️ Prediction Features
 
 The application offers several prediction options:
@@ -70,6 +55,8 @@ You can also adjust:
 - Weather conditions (Dry, Damp, Wet)
 - ML weight vs. performance factors
 
+---
+
 ## 📈 Data Analysis
 
 The application provides several data analysis features:
@@ -77,6 +64,8 @@ The application provides several data analysis features:
 - Circuit performance comparison
 - Driver and team performance analysis
 - Model performance metrics and visualizations
+
+---
 
 ## 🛠️ Technical Details
 
@@ -104,12 +93,39 @@ The application incorporates driver and team-specific performance factors to adj
 - Circuit-specific adjustments
 - Weather condition factors
 
-## 📝 License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🧪 Technologies Used
+
+- 🏎 FastF1
+- 📊 scikit-learn
+-  📈 pandas, numpy, matplotlib, seaborn
+-  🖥️ Streamlit
+-  🧠 Custom heuristics layer
+
+---
+
+## 📌 Roadmap
+- Basic ML model (Linear Regression)
+- Performance factor integration
+- Streamlit dashboard
+- Track-specific modifiers
+- Weather condition layer
+- Simulated quali session builder
+- Streamlit Cloud deployment
+
+ 
+---
+## 🚀 Getting Started
+
+### 🌐 Live Demo
+Check this project out at https://f1-quali-predictor.vercel.app/
+
+---
 
 ## 🙏 Acknowledgments
 
 - [FastF1](https://github.com/theOehrly/Fast-F1) for providing access to F1 data
 - [Streamlit](https://streamlit.io/) for the interactive web interface
 - Formula 1 for the inspiration
+
